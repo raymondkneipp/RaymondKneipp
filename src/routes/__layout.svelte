@@ -43,7 +43,7 @@
 <img
   src="/cursor.svg"
   alt="Cursor"
-  class="absolute z-50 pointer-events-none hidden sm:block"
+  class="absolute z-50 pointer-events-none hidden md:block"
   style={`top: ${m.y}px; left: ${m.x}px; width: ${cursorSize}; height: ${cursorSize}; transition: height 0.3s, width 0.3s, opacity 0.3s; opacity : ${cursorOpacity};`}
 />
 
@@ -78,7 +78,9 @@
     color: #fff;
   }
 
-  :global(*) {
-    cursor: none !important;
+  @media (min-width: 768px) {
+    :global(*) {
+      cursor: none !important;
+    }
   }
 </style>

@@ -14,6 +14,12 @@
     cursorOpacity = 0;
   }
 
+  function handleResize(event) {
+    cursorOpacity = 0;
+    m.x = 0;
+    m.y = 0;
+  }
+
   function shrink(event) {
     cursorSize = "1rem";
   }
@@ -37,7 +43,7 @@
 <img
   src="/cursor.svg"
   alt="Cursor"
-  class="absolute z-50 pointer-events-none"
+  class="absolute z-50 pointer-events-none hidden sm:block"
   style={`top: ${m.y}px; left: ${m.x}px; width: ${cursorSize}; height: ${cursorSize}; transition: height 0.3s, width 0.3s, opacity 0.3s; opacity : ${cursorOpacity};`}
 />
 
@@ -48,7 +54,7 @@
   on:mouseleave={fadeOut}
   on:mouseenter={fadeIn} />
 
-<svelte:window on:scroll={handleScroll} />
+<svelte:window on:scroll={handleScroll} on:resize={handleResize} />
 
 <header>
   <Navbar />

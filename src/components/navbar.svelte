@@ -8,26 +8,60 @@
     { name: "Portfolio", href: "/portfolio" },
     { name: "Services", href: "/services" },
   ];
+
+  var open = false;
+
+  function handleClick(event) {
+    open = !open;
+  }
 </script>
 
 <nav class="bg-gray-900 py-5 fixed top-0 right-0 left-0 z-40">
   <Container>
-    <div class="flex items-center justify-between">
-      <div class="flex">
+    <div
+      class="flex items-stretch md:items-center justify-between flex-col md:flex-row space-y-5 md:space-y-0"
+    >
+      <button
+        class="bg-transparent border-0 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-gray-900 focus:ring-offset-2 flex md:hidden self-end"
+        on:click={handleClick}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 8h16M4 16h16"
+          />
+        </svg>
+      </button>
+
+      <div
+        class={`${
+          open
+            ? "flex flex-col md:flex-row space-y-2 md:space-y-0"
+            : "hidden md:flex flex-row"
+        }`}
+      >
         {#each links as link}
           <a
-            class="text-white py-2 px-5 mx-2 transition-all hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-gray-900 focus:ring-offset-2"
+            class="text-white py-2 px-5 transition-all hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-gray-900 focus:ring-offset-2"
             href={link.href}>{link.name}</a
           >
         {/each}
 
         <Button href="/contact" light>Contact</Button>
       </div>
-      <div class="flex items-center space-x-10">
+      <div class={`items-center space-x-5 ${open ? "flex" : "hidden md:flex"}`}>
         <a
           href="/raymond-kneipp-resume.pdf"
           rel="external"
-          class="text-white transform hover:scale-125 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
         >
           <svg
             class="h-6 w-6 text-white"
@@ -43,7 +77,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/raymondkneipp/"
-          class="text-white transform hover:scale-125 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +91,7 @@
         </a>
         <a
           href="https://github.com/thor3444"
-          class="text-white transform hover:scale-125 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

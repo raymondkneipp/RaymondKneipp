@@ -2,17 +2,17 @@
   import Button from "./button.svelte";
   import Container from "./container.svelte";
 
-  let m = { x: 0, y: 0 };
+  //   let m = { x: 0, y: 0 };
 
-  function handleMousemove(event) {
-    m.x = event.clientX;
-    m.y = event.clientY;
-  }
+  //   function handleMousemove(event) {
+  //     m.x = event.clientX;
+  //     m.y = event.clientY;
+  //   }
 
-  let innerHeight;
+  //   let innerHeight;
 </script>
 
-<svelte:window bind:innerHeight />
+<!-- <svelte:window bind:innerHeight /> -->
 
 <div class="min-h-screen flex flex-col">
   <div class="bg-gray-900 overflow-hidden relative z-30 flex-1 flex items-end">

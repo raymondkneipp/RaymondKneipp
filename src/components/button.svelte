@@ -15,7 +15,7 @@
     sub
       ? "text-gray-900 hover:bg-gray-900 border-gray-900 focus:ring-gray-900 focus:ring-offset-white"
       : ""
-  } py-2 px-5 border hover:scale-110 transition-all hover:bg-opacity-10 active:scale-95 inline-flex items-center focus:outline-none focus:ring-1 focus:ring-offset-2`}
+  } py-2 px-5 border hover:scale-110 transition-all hover:bg-opacity-10 active:scale-95 inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-offset-2 text-center`}
   {href}
 >
   <slot />

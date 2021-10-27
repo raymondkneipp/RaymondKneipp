@@ -1,0 +1,78 @@
+<script>
+  import Navbar from "../components/navbar.svelte";
+
+  let m = { x: 0, y: 0 };
+
+  function handleMousemove(event) {
+    cursorOpacity = 1;
+
+    m.x = event.pageX;
+    m.y = event.pageY;
+  }
+
+  function handleScroll(event) {
+    cursorOpacity = 0;
+  }
+
+  function shrink(event) {
+    cursorSize = "1rem";
+  }
+
+  function grow(event) {
+    cursorSize = "1.5rem";
+  }
+
+  function fadeOut(event) {
+    cursorOpacity = 0;
+  }
+
+  function fadeIn(event) {
+    cursorOpacity = 0;
+  }
+
+  var cursorSize = "1.5rem";
+  var cursorOpacity = 1;
+</script>
+
+<img
+  src="/cursor.svg"
+  alt="Cursor"
+  class="absolute z-50 pointer-events-none"
+  style={`top: ${m.y}px; left: ${m.x}px; width: ${cursorSize}; height: ${cursorSize}; transition: height 0.3s, width 0.3s, opacity 0.3s; opacity : ${cursorOpacity};`}
+/>
+
+<svelte:body
+  on:mousemove={handleMousemove}
+  on:mousedown={shrink}
+  on:mouseup={grow}
+  on:mouseleave={fadeOut}
+  on:mouseenter={fadeIn} />
+
+<svelte:window on:scroll={handleScroll} />
+
+<header>
+  <Navbar />
+</header>
+
+<main>
+  <slot />
+</main>
+
+<style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  :global(::selection) {
+    background: #5fa4f9; /* WebKit/Blink Browsers */
+    color: #fff;
+  }
+  :global(::-moz-selection) {
+    background: #5fa4f9; /* Gecko Browsers */
+    color: #fff;
+  }
+
+  :global(*) {
+    cursor: none !important;
+  }
+</style>

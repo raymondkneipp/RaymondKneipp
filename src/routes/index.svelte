@@ -44,8 +44,8 @@
 
   export let data;
 
-  console.log(data?.data?.user?.pinnedItems?.edges);
   let projects = data?.data?.user?.pinnedItems?.edges;
+
   projects.push({
     node: {
       name: "BioBoost",

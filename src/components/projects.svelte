@@ -2,7 +2,8 @@
   export let projects;
   import Button from "./button.svelte";
   import Container from "./container.svelte";
-  import Link from "./link.svelte";
+
+  export let more = false;
 </script>
 
 <div class="py-20">
@@ -22,42 +23,48 @@
 
             <p class="flex-1">
               {project.node.description}
-              <Link href={`/projects/${project.node.name}`}>Read More</Link>
             </p>
 
             <div
               class="flex items-start justify-end sm:space-x-5 flex-col sm:flex-row sm:space-y-0 space-y-5"
             >
-              <Button href={project.node.url} sub>View Code</Button>
-              <Button href={`${project.node.homepageUrl}`} external>
-                Visit Project
-              </Button>
+              {#if project.node.url}
+                <Button href={project.node.url} sub>View Code</Button>
+              {/if}
+
+              {#if project.node.homepageUrl}
+                <Button href={`${project.node.homepageUrl}`} external>
+                  Visit Project
+                </Button>
+              {/if}
             </div>
           </div>
         </div>
       {/each}
 
-      <div
-        class="flex flex-col items-center justify-center bg-gray-100 p-10 space-y-5 border"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-36 w-36 text-gray-200"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+      {#if more}
+        <div
+          class="flex flex-col items-center justify-center bg-gray-100 p-10 space-y-5 border"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-          />
-        </svg>
-        <h6 class="text-gray-500 font-bold text-xl">Want to see more?</h6>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-36 w-36 text-gray-200"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+            />
+          </svg>
+          <h6 class="text-gray-500 font-bold text-xl">Want to see more?</h6>
 
-        <Button href="/projects" lg>All Projects</Button>
-      </div>
+          <Button href="/portfolio" lg>All Projects</Button>
+        </div>
+      {/if}
     </div>
   </Container>
 </div>

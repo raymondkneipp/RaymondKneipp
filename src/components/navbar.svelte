@@ -66,7 +66,7 @@
         <a
           href="/raymond-kneipp-resume.pdf"
           rel="external"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-5"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white p-5"
         >
           <svg
             class="h-6 w-6 text-white"
@@ -82,7 +82,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/raymondkneipp/"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-5"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white p-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@
         </a>
         <a
           href="https://github.com/raymondkneipp"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-5"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white p-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

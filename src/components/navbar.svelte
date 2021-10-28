@@ -17,7 +17,7 @@
 </script>
 
 <nav
-  class="bg-gray-900 py-5 fixed top-0 right-0 left-0 z-40 backdrop-filter backdrop-blur-xl bg-opacity-90"
+  class="bg-gray-900 py-5 fixed top-0 right-0 left-0 z-40 backdrop-filter backdrop-blur-xl bg-opacity-70"
 >
   <Container>
     <div

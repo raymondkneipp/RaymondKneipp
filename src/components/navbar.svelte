@@ -6,7 +6,7 @@
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
-    // { name: "Services", href: "/services" },
+    { name: "Contact", href: "/contact" },
   ];
 
   var open = false;
@@ -17,14 +17,14 @@
 </script>
 
 <nav
-  class="bg-gray-900 py-5 fixed top-0 right-0 left-0 z-40 backdrop-filter backdrop-blur-xl bg-opacity-70"
+  class="bg-gray-900 fixed top-0 right-0 left-0 z-40 backdrop-filter backdrop-blur-xl bg-opacity-80 border-b border-gray-800"
 >
   <Container>
     <div
-      class="flex items-stretch md:items-center justify-between flex-col md:flex-row space-y-5 md:space-y-0"
+      class="flex items-stretch md:items-center justify-between flex-col md:flex-row"
     >
       <button
-        class="bg-transparent border-0 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-gray-900 focus:ring-offset-2 flex md:hidden self-end"
+        class="bg-transparent border-0 transition-all focus:outline-none focus:ring-1 focus:ring-white flex md:hidden self-end p-3 m-2"
         on:click={handleClick}
       >
         <svg
@@ -52,14 +52,21 @@
       >
         {#each links as link}
           <a
-            class="text-white py-2 px-5 transition-all hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-gray-900 focus:ring-offset-2"
-            href={link.href}>{link.name}</a
+            class="text-white transition-all group hover:bg-white hover:bg-opacity-5 duration-300 focus:outline-none focus:ring-1 focus:ring-white flex flex-col"
+            href={link.href}
           >
+            <div class="flex-1 py-2 md:py-5 px-5">{link.name}</div>
+            <div
+              class="h-px w-0 bg-white group-hover:w-full transition-all duration-300"
+            />
+          </a>
         {/each}
-
-        <Button href="/contact" light>Contact</Button>
       </div>
-      <div class={`items-center space-x-5 ${open ? "flex" : "hidden md:flex"}`}>
+      <div
+        class={`items-center space-x-5 my-5 md:my-0 ${
+          open ? "flex" : "hidden md:flex"
+        }`}
+      >
         <a
           href="/raymond-kneipp-resume.pdf"
           rel="external"

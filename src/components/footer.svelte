@@ -1,70 +1,32 @@
 <script>
   import Button from "./button.svelte";
   import Container from "./container.svelte";
-
-  const links = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Portfolio", href: "/portfolio" },
-    // { name: "Services", href: "/services" },
-  ];
-
-  var open = false;
-
-  function handleClick(event) {
-    open = !open;
-  }
 </script>
 
-<nav class="bg-gray-900 py-5 fixed top-0 right-0 left-0 z-40">
+<div class="py-5 border-t">
   <Container>
     <div
-      class="flex items-stretch md:items-center justify-between flex-col md:flex-row space-y-5 md:space-y-0"
+      class="flex items-center justify-between flex-col space-y-5 sm:flex-row sm:space-y-0"
     >
-      <button
-        class="bg-transparent border-0 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-gray-900 focus:ring-offset-2 flex md:hidden self-end"
-        on:click={handleClick}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 8h16M4 16h16"
-          />
-        </svg>
-      </button>
-
       <div
-        class={`${
-          open
-            ? "flex flex-col md:flex-row space-y-2 md:space-y-0"
-            : "hidden md:flex flex-row"
-        }`}
+        class="flex items-center space-y-5 flex-col sm:flex-row sm:space-y-0 sm:space-x-5"
       >
-        {#each links as link}
-          <a
-            class="text-white py-2 px-5 transition-all hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-gray-900 focus:ring-offset-2"
-            href={link.href}>{link.name}</a
-          >
-        {/each}
+        <img src="/rk-logo-black.svg" class="h-10" alt="Raymond Kneipp Logo" />
 
-        <Button href="/contact" light>Contact</Button>
+        <div class="flex flex-col items-center sm:items-start">
+          <h6 class="font-bold text-base">Raymond Kneipp Web Design</h6>
+          <p class="text-sm">Building websites since 2016</p>
+        </div>
       </div>
-      <div class={`items-center space-x-5 ${open ? "flex" : "hidden md:flex"}`}>
+
+      <div class="items-center space-x-5 flex">
         <a
           href="/raymond-kneipp-resume.pdf"
           rel="external"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-gray-900 transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white p-2"
         >
           <svg
-            class="h-6 w-6 text-white"
+            class="h-6 w-6"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -77,11 +39,11 @@
         </a>
         <a
           href="https://www.linkedin.com/in/raymondkneipp/"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-gray-900 transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white p-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-white"
+            class="h-6 w-6"
             viewBox="0 0 24 24"
             fill="currentColor"
             ><path
@@ -91,11 +53,11 @@
         </a>
         <a
           href="https://github.com/raymondkneipp"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-gray-900 transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white p-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-white"
+            class="h-6 w-6"
             viewBox="0 0 24 24"
             fill="currentColor"
             ><path
@@ -106,4 +68,4 @@
       </div>
     </div>
   </Container>
-</nav>
+</div>

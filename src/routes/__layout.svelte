@@ -1,4 +1,5 @@
 <script>
+  import Footer from "../components/footer.svelte";
   import Navbar from "../components/navbar.svelte";
 
   let m = { x: 0, y: 0 };
@@ -63,6 +64,10 @@
 <main>
   <slot />
 </main>
+
+<footer>
+  <Footer />
+</footer>
 
 <style>
   @tailwind base;

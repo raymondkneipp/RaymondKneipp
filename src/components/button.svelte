@@ -3,19 +3,23 @@
   export let light = false;
   export let sub = false;
   export let external = false;
+  export let lg = false;
+  export let white = false;
+
+  const color = light
+    ? "text-blue-400 hover:bg-blue-400 border-blue-400 focus:ring-blue-400 focus:ring-offset-gray-900"
+    : sub
+    ? "text-gray-900 hover:bg-gray-900 border-gray-900 focus:ring-gray-900 focus:ring-offset-white"
+    : white
+    ? "text-white hover:bg-white border-white focus:ring-white focus:ring-offset-blue-600"
+    : "text-blue-600 hover:bg-blue-600 border-blue-600 focus:ring-blue-600 focus:ring-offset-white";
+
+  const size = lg ? "py-3 px-6 text-lg" : "py-2 px-5 text-base";
 </script>
 
 <a
   target={external ? "_blank" : "_self"}
-  class={`${
-    light
-      ? "text-blue-400 hover:bg-blue-400 border-blue-400 focus:ring-blue-400 focus:ring-offset-gray-900"
-      : "text-blue-600 hover:bg-blue-600 border-blue-600 focus:ring-blue-600 focus:ring-offset-white"
-  } ${
-    sub
-      ? "text-gray-900 hover:bg-gray-900 border-gray-900 focus:ring-gray-900 focus:ring-offset-white"
-      : ""
-  } py-2 px-5 border hover:scale-110 transition-all hover:bg-opacity-10 active:scale-95 inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-offset-2 text-center`}
+  class={`${color} ${size} border hover:scale-110 transition-all hover:bg-opacity-10 active:scale-95 inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-offset-2 text-center`}
   {href}
 >
   <slot />

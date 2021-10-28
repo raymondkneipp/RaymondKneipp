@@ -6,7 +6,7 @@
     const body = JSON.stringify({
       query: `{
             user(login:"raymondkneipp") {
-                pinnedItems(first: 6, types: [REPOSITORY, GIST]) {
+                pinnedItems(first: 3, types: [REPOSITORY, GIST]) {
                     totalCount
                     edges {
                         node {
@@ -41,6 +41,8 @@
   import Projects from "../components/projects.svelte";
   import Aboutme from "../components/aboutme.svelte";
   import Hero from "../components/hero.svelte";
+  import Why from "../components/why.svelte";
+  import Cta from "../components/cta.svelte";
 
   export let data;
 
@@ -72,6 +74,8 @@
 <Hero />
 <Aboutme />
 <Projects {projects} />
+<Why />
+<Cta />
 
 <svelte:head>
   <title>Web Developer - Raymond Kneipp</title>

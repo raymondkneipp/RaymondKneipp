@@ -21,7 +21,7 @@
         <h1
           class="text-white font-bold text-4xl sm:text-5xl lg:text-7xl text-center md:order-last pt-20 md:py-20 md:text-left lg:ml-auto lg:w-96"
         >
-          Hey, I’m<br />Raymond<br />Kneipp.
+          Hey, I’m Raymond Kneipp.
         </h1>
 
         <img
@@ -42,14 +42,14 @@
         />
 
         <div
-          class="pb-20 flex flex-col items-center md:items-start space-y-5 md:py-20 lg:ml-auto lg:w-96"
+          class="pb-20 flex flex-col items-center md:items-start space-y-10 md:py-20 lg:ml-auto lg:w-96"
         >
           <h2
-            class="text-gray-900 font-thin text-2xl sm:text-3xl lg:text-5xl leading-tight text-center md:text-left"
+            class="text-gray-900 font-extralight text-2xl sm:text-3xl lg:text-5xl leading-tight text-center md:text-left"
           >
-            Bespoke Websites<br />That Leave Lasting<br />Impressions
+            I design & build responsive, optimized websites.
           </h2>
-          <Button href="contact">Free Consultation</Button>
+          <Button href="contact" lg>Free Consultation</Button>
         </div>
       </div>
     </Container>

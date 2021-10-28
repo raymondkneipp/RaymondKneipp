@@ -36,6 +36,28 @@
           </div>
         </div>
       {/each}
+
+      <div
+        class="flex flex-col items-center justify-center bg-gray-100 p-10 space-y-5 border"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-36 w-36 text-gray-200"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          />
+        </svg>
+        <h6 class="text-gray-500 font-bold text-xl">Want to see more?</h6>
+
+        <Button href="/projects" lg>All Projects</Button>
+      </div>
     </div>
   </Container>
 </div>

@@ -24,7 +24,7 @@
       class="flex items-stretch md:items-center justify-between flex-col md:flex-row"
     >
       <button
-        class="bg-transparent border-0 transition-all focus:outline-none focus:ring-1 focus:ring-white flex md:hidden self-end p-3 m-2"
+        class="bg-transparent border-0 transition-all outline-none focus:ring-1 focus:ring-white flex md:hidden self-end p-3 m-2"
         on:click={handleClick}
       >
         <svg
@@ -52,7 +52,7 @@
       >
         {#each links as link}
           <a
-            class="text-white transition-all group hover:bg-white hover:bg-opacity-10 duration-300 focus:outline-none focus:ring-1 focus:ring-white flex flex-col"
+            class="text-white transition-all group hover:bg-white hover:bg-opacity-10 duration-300 outline-none focus:ring-1 focus:ring-white flex flex-col"
             href={link.href}
             on:click={(e) => handleClick(e)}
           >
@@ -67,7 +67,7 @@
         <a
           href="/raymond-kneipp-resume.pdf"
           rel="external"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white p-5"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all outline-none focus:ring-1 focus:ring-white p-5"
         >
           <svg
             class="h-6 w-6 text-white"
@@ -83,7 +83,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/raymondkneipp/"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white p-5"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all outline-none focus:ring-1 focus:ring-white p-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
         </a>
         <a
           href="https://github.com/raymondkneipp"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white p-5"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all outline-none focus:ring-1 focus:ring-white p-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

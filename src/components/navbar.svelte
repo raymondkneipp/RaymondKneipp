@@ -16,7 +16,9 @@
   }
 </script>
 
-<nav class="bg-gray-900 py-5 fixed top-0 right-0 left-0 z-40">
+<nav
+  class="bg-gray-900 py-5 fixed top-0 right-0 left-0 z-40 backdrop-filter backdrop-blur-xl bg-opacity-90"
+>
   <Container>
     <div
       class="flex items-stretch md:items-center justify-between flex-col md:flex-row space-y-5 md:space-y-0"

@@ -9,7 +9,7 @@
       class="flex items-center justify-between flex-col space-y-5 sm:flex-row sm:space-y-0"
     >
       <div
-        class="flex items-center space-y-5 flex-col sm:flex-row sm:space-y-0 sm:space-x-5"
+        class="flex items-center space-y-5 flex-col sm:flex-row sm:space-y-0 sm:space-x-5 flex-1"
       >
         <img src="/rk-logo-black.svg" class="h-10" alt="Raymond Kneipp Logo" />
 

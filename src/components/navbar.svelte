@@ -57,20 +57,16 @@
           >
             <div class="flex-1 py-2 md:py-5 px-5">{link.name}</div>
             <div
-              class="h-px w-0 bg-white group-hover:w-full transition-all duration-300 transform translate-y-px"
+              class="hidden md:block h-px w-0 bg-white group-hover:w-full transition-all duration-300 transform translate-y-px"
             />
           </a>
         {/each}
       </div>
-      <div
-        class={`items-center space-x-5 my-5 md:my-0 ${
-          open ? "flex" : "hidden md:flex"
-        }`}
-      >
+      <div class={`items-center space-x-5 ${open ? "flex" : "hidden md:flex"}`}>
         <a
           href="/raymond-kneipp-resume.pdf"
           rel="external"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-5"
         >
           <svg
             class="h-6 w-6 text-white"
@@ -86,7 +82,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/raymondkneipp/"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +96,7 @@
         </a>
         <a
           href="https://github.com/raymondkneipp"
-          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-2"
+          class="text-white transform hover:scale-125 active:scale-95 transition-all focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 p-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

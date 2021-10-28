@@ -44,7 +44,7 @@
       </button>
 
       <div
-        class={`${
+        class={`md:space-x-5 ${
           open
             ? "flex flex-col md:flex-row space-y-2 md:space-y-0"
             : "hidden md:flex flex-row"
@@ -52,12 +52,12 @@
       >
         {#each links as link}
           <a
-            class="text-white transition-all group hover:bg-white hover:bg-opacity-5 duration-300 focus:outline-none focus:ring-1 focus:ring-white flex flex-col"
+            class="text-white transition-all group hover:bg-white hover:bg-opacity-10 duration-300 focus:outline-none focus:ring-1 focus:ring-white flex flex-col"
             href={link.href}
           >
             <div class="flex-1 py-2 md:py-5 px-5">{link.name}</div>
             <div
-              class="h-px w-0 bg-white group-hover:w-full transition-all duration-300"
+              class="h-px w-0 bg-white group-hover:w-full transition-all duration-300 transform translate-y-px"
             />
           </a>
         {/each}

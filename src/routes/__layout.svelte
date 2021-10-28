@@ -57,6 +57,10 @@
 
 <svelte:window on:scroll={handleScroll} on:resize={handleResize} />
 
+<svelte:head>
+  <meta name="theme-color" content="#2463EB" />
+</svelte:head>
+
 <header>
   <Navbar />
 </header>

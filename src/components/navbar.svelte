@@ -54,6 +54,7 @@
           <a
             class="text-white transition-all group hover:bg-white hover:bg-opacity-10 duration-300 focus:outline-none focus:ring-1 focus:ring-white flex flex-col"
             href={link.href}
+            on:click={(e) => handleClick(e)}
           >
             <div class="flex-1 py-2 md:py-5 px-5">{link.name}</div>
             <div

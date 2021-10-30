@@ -41,6 +41,9 @@
     } catch (error) {
       error = error.msg;
     }
+
+    email = "";
+    msg = "";
   }
 </script>
 

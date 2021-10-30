@@ -1,8 +1,8 @@
 <script>
   import Container from "../components/container.svelte";
 
-  import Button from "../components/button.svelte";
-  import Link from "../components/link.svelte";
+  let email = "";
+  let msg = "";
 </script>
 
 <div class="bg-gray-900 py-20">
@@ -16,6 +16,7 @@
           <input
             type="email"
             id="email"
+            bind:value={email}
             class="bg-transparent border border-gray-700 py-2 px-5 text-white outline-none focus:border-white transition-all"
           />
         </div>
@@ -24,10 +25,19 @@
           <label for="message" class="text-white">Message</label>
           <textarea
             id="message"
+            bind:value={msg}
             cols="10"
             class="bg-transparent border border-gray-700 py-2 px-5 text-white outline-none focus:border-white transition-colors resize-y h-36"
           />
         </div>
+
+        <button
+          type="submit"
+          class="text-blue-400 hover:bg-blue-400 border-blue-400 focus:ring-blue-400 focus:ring-offset-gray-900 border hover:scale-110 transition-all hover:bg-opacity-10 active:scale-95 inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-offset-2 text-center py-2 px-5 text-base"
+          >Submit</button
+        >
+
+        <p>{email} sent {msg}</p>
       </form>
     </div>
   </Container>

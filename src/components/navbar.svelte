@@ -23,28 +23,36 @@
     <div
       class="flex items-stretch md:items-center justify-between flex-col md:flex-row"
     >
-      <button
-        class="bg-transparent border-0 transition-all outline-none focus:ring-1 focus:ring-white flex md:hidden self-end p-3 m-2"
-        on:click={handleClick}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+      <div class="flex flex-row items-center justify-between">
+        <a
+          href="/"
+          class="outline-none focus:ring-1 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 8h16M4 16h16"
-          />
-        </svg>
-      </button>
+          <img src="rk-logo.svg" class="h-8" alt="Raymond Kneipp Logo" />
+        </a>
+        <button
+          class="bg-transparent border-0 transition-all outline-none focus:ring-1 focus:ring-white flex md:hidden py-3 my-2"
+          on:click={handleClick}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 8h16M4 16h16"
+            />
+          </svg>
+        </button>
+      </div>
 
       <div
-        class={`md:space-x-5 ${
+        class={`md:space-x-2 ${
           open
             ? "flex flex-col md:flex-row space-y-2 md:space-y-0"
             : "hidden md:flex flex-row"
@@ -63,14 +71,14 @@
           </a>
         {/each}
       </div>
-      <div class={`items-center space-x-5 ${open ? "flex" : "hidden md:flex"}`}>
+      <div class={`items-center space-x-2 ${open ? "flex" : "hidden md:flex"}`}>
         <a
           href="/raymond-kneipp-resume.pdf"
           rel="external"
           class="text-white transform active:scale-95 transition-all hover:bg-white hover:bg-opacity-10 duration-300 outline-none focus:ring-1 focus:ring-white group flex flex-col"
         >
           <svg
-            class="h-6 w-6 text-white flex-1 m-5"
+            class="h-6 w-6 flex-1 m-5"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +99,7 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-white flex-1 m-5"
+            class="h-6 w-6 flex-1 m-5"
             viewBox="0 0 24 24"
             fill="currentColor"
             ><path
@@ -108,7 +116,7 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-white flex-1 m-5"
+            class="h-6 w-6 flex-1 m-5"
             viewBox="0 0 24 24"
             fill="currentColor"
             ><path

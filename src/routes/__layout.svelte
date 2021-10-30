@@ -58,7 +58,17 @@
 <svelte:window on:scroll={handleScroll} on:resize={handleResize} />
 
 <svelte:head>
+  <title>Web Developer - Raymond Kneipp</title>
+
   <meta name="theme-color" content="#2463EB" />
+  <meta
+    name="description"
+    content="I'm Raymond Kneipp and I am a freelance web developer."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
 </svelte:head>
 
 <header>

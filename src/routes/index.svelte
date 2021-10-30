@@ -54,10 +54,3 @@
 <Projects {projects} more />
 <Why />
 <Cta />
-
-<svelte:head>
-  <title>Web Developer - Raymond Kneipp</title>
-
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-</svelte:head>

@@ -10,7 +10,7 @@
 </script>
 
 <a
-  class={`${colors} hover:underline transition-all hover:bg-opacity-10 focus:outline-none focus:ring-1 focus:ring-offset-2 inline-flex items-center group`}
+  class={`${colors} hover:underline transition-all hover:bg-opacity-10 focus:outline-none focus:ring-1 focus:ring-offset-2 inline-flex items-center group break-all`}
   {href}
   rel={external ? "external" : ""}
 >

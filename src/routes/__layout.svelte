@@ -59,6 +59,7 @@
 
 <svelte:head>
   <title>Web Developer - Raymond Kneipp</title>
+  <meta name="title" content="Web Developer - Raymond Kneipp" />
 
   <meta name="theme-color" content="#2463EB" />
   <meta
@@ -69,6 +70,26 @@
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://raymondkneipp.com/" />
+  <meta property="og:title" content="Web Developer - Raymond Kneipp" />
+  <meta
+    property="og:description"
+    content="I'm Raymond Kneipp and I am a freelance web developer."
+  />
+  <meta property="og:image" content="/raymondkneipp.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://raymondkneipp.com/" />
+  <meta property="twitter:title" content="Web Developer - Raymond Kneipp" />
+  <meta
+    property="twitter:description"
+    content="I'm Raymond Kneipp and I am a freelance web developer."
+  />
+  <meta property="twitter:image" content="/raymondkneipp.jpg" />
 </svelte:head>
 
 <header>

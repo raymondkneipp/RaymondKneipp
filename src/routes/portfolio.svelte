@@ -38,6 +38,7 @@
 </script>
 
 <script>
+  import Cta from "../components/cta.svelte";
   import Projects from "../components/projects.svelte";
 
   export let data;
@@ -69,4 +70,5 @@
 
 <div class="pt-20">
   <Projects {projects} />
+  <Cta />
 </div>

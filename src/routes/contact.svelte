@@ -72,10 +72,10 @@
             <div class="space-y-2">
               <h3 class="text-xl font-bold text-white">Email</h3>
               <Link
-                href="mailto:raymond.f.kneipp@gmail.com"
+                href="mailto:hello@raymondkneipp.com"
                 arrow={true}
                 light
-                external>raymond.f.kneipp@gmail.com</Link
+                external>hello@raymondkneipp.com</Link
               >
             </div>
           </div>

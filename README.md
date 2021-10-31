@@ -1,7 +1,5 @@
 ## Hey there 👋, I'm Raymond Kneipp.
 
-![Raymond Kneipp Logo](/static/rk-logo.svg "My wonderful logo")
-
 🌐 Check out my [website](https://raymondkneipp.com)!
 
 🤝 Connect with me on [LinkedIn](https://www.linkedin.com/in/raymondkneipp/)

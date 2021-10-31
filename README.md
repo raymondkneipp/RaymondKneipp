@@ -1,6 +1,6 @@
 ## Hey there 👋, I'm Raymond Kneipp.
 
-🌐 Check out my [website](https://raymondkneipp.com)!
+🌐 Check out my [website](https://raymondkneipp.com) that I made with SvelteKit!
 
 🤝 Connect with me on [LinkedIn](https://www.linkedin.com/in/raymondkneipp/)
 

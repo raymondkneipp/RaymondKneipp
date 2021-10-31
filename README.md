@@ -6,7 +6,7 @@
 
 ## A little bit about me
 
-- ⚛ I specialize in React.js
+- ⚛ I love working with React.js
 - 💪🏼 I enjoy health & fitness
 - 🤘🏼 I love metalcore music
 - 💰 Passionate about personal finances

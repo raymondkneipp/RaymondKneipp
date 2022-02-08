@@ -6,9 +6,8 @@
 
 ## A little bit about me
 
-- ⚛ I love working with React.js
+- ⚛ I primarily work with React.js
 - 💪🏼 I enjoy health & fitness
-- 🤘🏼 I love metalcore music
 - 💰 Passionate about personal finances
 - ₿ Cryptocurrency fanatic
 - 🦅 🌎 ⚓️ Currently serving in the U.S. Marine Corps
